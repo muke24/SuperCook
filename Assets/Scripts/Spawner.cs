@@ -9,13 +9,10 @@ public class Spawner : MonoBehaviour
 
     void Start()
     {
-        
-        print("Starting " + Time.time);
-
         coroutine = CustomerSpawn(10.0f);
         StartCoroutine(coroutine);
 
-        print("Counting " + Time.time);
+        print("Customer Spawned and customer spawn timer started" + Time.time);
     }
 
     private IEnumerator CustomerSpawn(float waitTime)
@@ -33,8 +30,7 @@ public class Spawner : MonoBehaviour
     {
         if (coroutine == CustomerSpawn(0.0f))
         {
-            
-            
+                       
             CustomerSpawn(10.0f);
         }
     }

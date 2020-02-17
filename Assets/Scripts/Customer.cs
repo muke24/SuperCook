@@ -16,9 +16,16 @@ public class Customer : MonoBehaviour
     private Vector3 pos4 = new Vector3(-9f, 1f, -2.5f);
     private Vector3 pos5 = new Vector3(-9f, 1f, -5f);
 
+
+    private WayPoints wayPoints;
+
+
     // Start is called before the first frame update
     void Start()
     {
+        wayPoints = FindObjectOfType<WayPoints>();
+        //WherePosIsLocated.pos[];
+
         customer.position = spawnPos;
         randomPath = Random.Range(1, 5);
     }
@@ -26,6 +33,9 @@ public class Customer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        agent.SetDestination(wayPoints.wayPointPositions[randomPath].position);
+        //agent.SetDestination(pos[randomPath].position);
+        /*
         if (randomPath == 0)
         {
             agent.SetDestination(spawnPos);
@@ -49,6 +59,6 @@ public class Customer : MonoBehaviour
         if (randomPath == 5)
         {
             agent.SetDestination(pos5);
-        }
+        }*/
     }
 }

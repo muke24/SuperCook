@@ -134,9 +134,3 @@ MonoBehaviour:
   randomPath: 0
   randomItem: 0
   agent: {fileID: 993960798031580816}
-  spawnPos: {x: 0, y: 0, z: 0}
-  pos1: {x: 0, y: 0, z: 0}
-  pos2: {x: 0, y: 0, z: 0}
-  pos3: {x: 0, y: 0, z: 0}
-  pos4: {x: 0, y: 0, z: 0}
-  pos5: {x: 0, y: 0, z: 0}
