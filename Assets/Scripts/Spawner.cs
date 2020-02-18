@@ -4,7 +4,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public GameObject customer;
-    public Transform spawnPos;
+    
     private IEnumerator coroutine;
 
     void Start()
@@ -29,8 +29,7 @@ public class Spawner : MonoBehaviour
     void Update()
     {
         if (coroutine == CustomerSpawn(0.0f))
-        {
-                       
+        {                       
             CustomerSpawn(10.0f);
         }
     }
