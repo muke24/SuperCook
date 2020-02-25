@@ -36,6 +36,7 @@ public class Countdown : MonoBehaviour
             seconds = 0;
         }
         //        fraction = (timeLeft * 100) % 100;
+        text.text = string.Format("{0:0}:{1:00}", minutes, seconds);
     }
 
     private IEnumerator updateCoroutine()
